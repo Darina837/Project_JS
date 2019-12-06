@@ -8,7 +8,7 @@ function checkTouch() {
 						|| yPosition + cosmonaut.height >= gameCanvas.height - frontground.height) {
 			kickAudio.play().then( () => {
 				cancelAnimationFrame(myReq);
-				swalAlert();
+				Alert.render();
 			} );
 			break;
  		}
